@@ -12,10 +12,10 @@ struct ContentView: View {
             
             // First Column
             VStack(alignment: .leading) {
-                A1Box()
-                    .offset(y: 4)
+//                A1Box()
+//                    .offset(y: 4)
                 A2Box()
-                    .offset(y: -5)
+//                    .offset(y: -5)
             }
             
             // Second Column
@@ -31,7 +31,7 @@ struct ContentView: View {
             // Third Column
             VStack(alignment: .leading) {
                 HStack {
-                    C1Box()
+                    C1BoxPhoto()
                     C2Box()
                 }
                 .offset(y: -8)
@@ -44,6 +44,13 @@ struct ContentView: View {
                 .offset(y: 8)
             }
         }
+        .overlay(alignment: .bottomTrailing) {
+            Text("p.s. This CV made in SwiftUI, check out the repo 😊\nFor more details visit my LinkedIn profile.")
+                .fontDesign(.monospaced)
+                .foregroundStyle(.secondary)
+                .offset(y: 50)
+        }
+        .padding(.all, 50)
     }
 }
 

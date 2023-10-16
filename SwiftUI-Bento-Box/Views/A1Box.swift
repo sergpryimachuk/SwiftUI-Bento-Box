@@ -13,7 +13,7 @@ struct A1Box: View {
                 .frame(width: 320, height: 90)
                 .foregroundColor(.gray.opacity(0.1))
             
-            Text("\"A1 text goes here\"")
+            Text("Serhii Pryimachuk")
                 .gradientForeground(colors: [Color.blue, Color.green])
                 .bold()
                 .font(.system(size: 30))

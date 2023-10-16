@@ -13,15 +13,15 @@ struct B2Box: View {
                 .frame(width: 124, height: 170)
                 .foregroundColor(.gray.opacity(0.1))
             
-            Image(systemName: "lightbulb.fill")
+            Image(systemName: "homekit")
                 .font(.system(size: 60))
                 .gradientForeground(colors: [Color.orange, Color.yellow])
                 .padding(.bottom, 50)
             
-            Text("B2 Box")
+            Text("Smart Home\nenthusiast")
                 .padding(.top, 80)
-                .font(.system(size: 20))
-                
+                .font(.system(size: 18))
+                .multilineTextAlignment(.center)
         }
     }
 }

@@ -13,17 +13,46 @@ struct B3Box: View {
             RoundedRectangle(cornerRadius: 20.0)
                 .frame(width: 400, height: 240)
                 .foregroundColor(.gray.opacity(0.1))
-            RoundedRectangle(cornerRadius: 20.0)
-                .frame(width: 360, height: 160)
-                .foregroundColor(.white)
-                .offset(x: 0, y: 20)
-                .overlay {
-                    Text("Something cool goes here")
+            
+            VStack {
+                Text("Work experience")
+                    .font(.system(size: 24))
+                    .bold()
+                    .padding(.bottom)
+                HStack {
+                    Text("2022")
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("**TeeJet**, *Orléans, France*")
+                        Text("Junior digital marketing & com. assistant")
+                    }
                 }
-            Text("B3 Headline")
-                .font(.system(size: 30))
-                .bold()
-                .offset(x: 0, y: -90)
+                Divider()
+                
+                HStack {
+                    Text("2021")
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("**Sencrop**, *Lille, France*")
+                        Text("Product marketing intern")
+                    }
+                }
+                Divider()
+                
+                HStack {
+                    Text("2019")
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("**Vodafone**, *Kyiv, Ukraine*")
+                        Text("Product management intern")
+                    }
+                }
+            }
+            .frame(width: 360, height: 160)
+            
+            //            RoundedRectangle(cornerRadius: 20.0)
+            //                .foregroundColor(.white)
+            //                .offset(x: 0, y: 20)
         }
     }
 }

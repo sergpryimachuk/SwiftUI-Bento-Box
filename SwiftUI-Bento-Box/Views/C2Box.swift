@@ -13,15 +13,21 @@ struct C2Box: View {
                 .frame(width: 155, height: 205)
                 .foregroundColor(.gray.opacity(0.1))
             
-            Image(systemName: "chart.pie.fill")
-                .font(.system(size: 80))
-                .gradientForeground(colors: [Color.pink, Color.purple])
-                .padding(.bottom, 50)
-            
-            Text("C2 Headline")
-                .padding(.top, 110)
-                .font(.system(size: 20))
+            VStack(spacing: 10) {
+                Image(systemName: "flag.2.crossed")
+                    .font(.system(size: 40))
+                    .gradientForeground(colors: [.blue, .yellow])
                 
+                Text("Languages")
+                    .font(.system(size: 20))
+                    .fontWeight(.semibold)
+                
+                VStack(alignment: .leading) {
+                    Text("🇫🇷 Intermediate")
+                    Text("🇬🇧 Advanced")
+                    Text("🇺🇦 Native")
+                }
+            }
         }
     }
 }

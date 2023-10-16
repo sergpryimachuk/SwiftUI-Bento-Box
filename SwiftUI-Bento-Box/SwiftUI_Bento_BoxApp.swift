@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct SwiftUI_Bento_BoxApp: App {
+    
+    @State private var pdfManager = PDFManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+                    .toolbar {
+                        ToolbarItem(placement: .primaryAction) {
+                            ShareLink(item: pdfManager.saveAsPDF(view: ContentView())) {
+                                Label("Export CV", systemImage: "square.and.arrow.up")
+                            }
+                        }
+                    }
+            }
         }
     }
 }

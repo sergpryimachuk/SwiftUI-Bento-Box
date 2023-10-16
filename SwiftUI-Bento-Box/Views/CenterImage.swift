@@ -9,16 +9,20 @@ import SwiftUI
 struct CenterImage: View {
     var body: some View {
         ZStack {
-            Color.blue // Swap this with your own image
-                //.resizable() // UNcomment this to properly resize your image
-                //.scaledToFill()
+            Color.gray.opacity(0.1)
                 .frame(width: 400, height: 175)
                 .cornerRadius(20)
             
-            Text("Primary Text")
-                .font(.system(size: 63))
-                .foregroundColor(.white)
-                .offset(y: 30)
+            VStack(spacing: 15) {
+                Text("Serhii Pryimachuk")
+                    .font(.system(size: 43))
+                    .bold()
+                    .gradientForeground(colors: [Color.blue, Color.green])
+                
+                Text("Switched from marketing to iOS development, *because I love it*.")
+                    .font(.system(size: 24))
+                    .multilineTextAlignment(.center)
+            }
         }
         .frame(width: 400, height: 170)
     }

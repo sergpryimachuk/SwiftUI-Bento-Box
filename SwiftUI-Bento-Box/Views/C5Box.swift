@@ -13,14 +13,14 @@ struct C5Box: View {
                 .frame(width: 155, height: 205)
                 .foregroundColor(.gray.opacity(0.1))
             
-            Image(systemName: "star.bubble.fill")
+            Image(systemName: "graduationcap.fill")
                 .resizable()
                 .frame(width: 80, height: 80)
                 .scaledToFit()
-                .gradientForeground(colors: [Color.gray, Color.yellow])
+                .gradientForeground(colors: [.cyan, .mint])
                 .padding(.bottom, 40)
             
-            Text("C5 Headline")
+            Text("Diplôme\nd’ingénieur")
                 .padding(.top, 110)
                 .font(.system(size: 20))
                 .multilineTextAlignment(.center)

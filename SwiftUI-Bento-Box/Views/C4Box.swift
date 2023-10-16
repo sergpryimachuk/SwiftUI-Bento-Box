@@ -13,15 +13,16 @@ struct C4Box: View {
                 .frame(width: 155, height: 205)
                 .foregroundColor(.gray.opacity(0.1))
             
-            Image(systemName: "photo")
+            Image(systemName: "swift")
                 .font(.system(size: 80))
                 .scaledToFit()
+                .gradientForeground(colors: [.orange, .red])
                 .padding(.bottom, 40)
             
-            Text("C4 Headline")
+            Text("Swift\nlanguage")
                 .padding(.top, 110)
                 .font(.system(size: 20))
-                
+                .multilineTextAlignment(.center)
         }
     }
 }

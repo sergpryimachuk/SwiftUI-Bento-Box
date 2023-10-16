@@ -14,16 +14,18 @@ struct C3Box: View {
                     .frame(width: 320, height: 180)
                     .foregroundColor(.gray.opacity(0.1))
                 HStack {
-                    Image(systemName: "photo")
-                        .font(.system(size: 80))
-                        .offset(x: 20, y: 1)
-                    Spacer()
-                    Text("C3 Headline")
-                        .font(.system(size: 30))
-                        .gradientForeground(colors: [Color.cyan, Color.mint])
-                        .bold()
-                        .offset(x: -10)
+                    Image(.productStrategistCertificate)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 90, height: 90)
+                    VStack(alignment: .leading) {
+                        Text("Product taste")
+                            .font(.system(size: 30))
+                            .bold()
+                        Text("Great products start with a good taste")
+                    }
                 }
+                .padding()
             }
             .frame(width: 320, height: 160)
         }
